@@ -58,7 +58,7 @@ export class MessageManagerProvider extends Component {
       id: generateRandomId(),
       isError,
       icon,
-      displayTime: displayTime && displayTime + 800,   //adding transition time for the message bar
+      displayTime: displayTime && displayTime + 800 || 2800,   //adding transition time for the message bar
     };
   };
 
