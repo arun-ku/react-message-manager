@@ -1,12 +1,11 @@
 import path from 'path';
-import webpack from 'webpack';
 
 module.exports = {
-  entry: './MessageManager/index.js',
+  entry: './example/src/index.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'build.js',
     path: path.resolve(__dirname, 'dist'),
-    libraryTarget: 'umd',
+    publicPath: '/js',
   },
   module: {
     rules : [
@@ -17,4 +16,9 @@ module.exports = {
       },
     ]
   },
+  resolve: {
+    alias: {
+      'message-manager': path.resolve(__dirname, '../dist/bundle.js'),
+    }
+  }
 };
