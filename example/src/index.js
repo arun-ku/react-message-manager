@@ -7,7 +7,7 @@ import App from './App';
 const elem = document.getElementById('app');
 
 render(
-  <MessageManagerProvider isDesktop>
+  <MessageManagerProvider desktopView>
     <App />
   </MessageManagerProvider>,
   elem
