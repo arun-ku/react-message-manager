@@ -2,7 +2,7 @@
   "name": "message-manager",
   "version": "1.0.0",
   "description": "A toaster component for react",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "author": "Arun Kumar",
   "license": "MIT",
   "scripts": {
@@ -45,5 +45,23 @@
     "style-loader": "^0.20.1",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
-  }
+  },
+  "keywords": [
+    "react message manager",
+    "react-message-manager",
+    "react toastr",
+    "react-toastr",
+    "react-toaster",
+    "react toaster",
+    "toaster",
+    "react",
+    "message bar",
+    "react message bar",
+    "message-bar",
+    "react-message-bar",
+    "slider message",
+    "slider-message",
+    "sliding message",
+    "sliding-message"
+  ]
 }
