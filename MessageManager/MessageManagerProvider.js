@@ -252,24 +252,23 @@ export default class MessageManagerProvider extends Component {
                 baseStylesInvisible = { ...baseStylesInvisible, ...transitionStyles.final };
               }
               return (
-                <div key={`mm_key_${separator}_${index}`}>
-                  <div
-                    className={textContainerStyle}
-                    style={{...baseStyles}}
-                  >
-                    <div style={styles.textContainer}>
-                      <div style={styles.text}>
-                        <i style={iconStyles} className={icon} />
-                        <span style={messageStyles} dangerouslySetInnerHTML={{__html: message}}/>
-                      </div>
-                      <i
-                        style={styles.crossIcon}
-                        className="crossMark"
-                        onClick={() => this.hideMessageBar(id)}
-                      >
-                        &#10005;
-                      </i>
+                <div
+                  key={`mm_key_${separator}_${index}`}
+                  className={textContainerStyle}
+                  style={{...baseStyles}}
+                >
+                  <div style={styles.textContainer}>
+                    <div style={styles.text}>
+                      <i style={iconStyles} className={icon} />
+                      <span style={messageStyles} dangerouslySetInnerHTML={{__html: message}}/>
                     </div>
+                    <i
+                      style={styles.crossIcon}
+                      className="crossMark"
+                      onClick={() => this.hideMessageBar(id)}
+                    >
+                      &#10005;
+                    </i>
                   </div>
                 </div>
               )
