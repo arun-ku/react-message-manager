@@ -94,7 +94,8 @@ const mobileStyles = {
     fontWeight: 800,
     height: 'auto',
     position: 'static',
-    marginBottom: 5,
+    marginBottom: 0,
+    marginTop: 5,
     ...transitionStylesMobile.initial,
   },
   textContainer: {
