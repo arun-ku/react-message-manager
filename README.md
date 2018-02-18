@@ -2,7 +2,7 @@
 Message manager is a react toastr component for displaying toast messages in your react
 desktop as well as mobile web applications.
 
-### [Demo](http://google.com)
+### [Demo](https://msgmngr.herokuapp.com/)
 
 ### Installation
 
