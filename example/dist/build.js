@@ -1402,7 +1402,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 (0, _reactDom.render)(_react2.default.createElement(
   _messageManager.MessageManagerProvider,
   { desktopView: desktopView },
-  _react2.default.createElement(_App2.default, null)
+  _react2.default.createElement(_App2.default, { isDesktop: desktopView })
 ), elem);
 
 /***/ }),
@@ -18833,9 +18833,11 @@ var App = (0, _messageManager.injectMessageManager)(_class = function (_Componen
     value: function render() {
       var _this2 = this;
 
+      var isDesktop = this.props.isDesktop;
+
       return _react2.default.createElement(
         'div',
-        { className: 'container' },
+        { className: 'container ' + (isDesktop ? '' : 'mobile') },
         _react2.default.createElement(
           'h1',
           null,
@@ -18845,6 +18847,15 @@ var App = (0, _messageManager.injectMessageManager)(_class = function (_Componen
           'p',
           { className: 'description' },
           'Message Manager is a toastr like component for react. It is easy to use and there is no need to add external css files into your code as it uses inline styles.'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'device-info' },
+          'Open in ',
+          isDesktop ? 'mobile device or simulator ' : 'desktop device ',
+          'to see the ',
+          isDesktop ? 'mobile' : 'desktop',
+          ' view'
         ),
         _react2.default.createElement(
           'div',
@@ -18992,7 +19003,7 @@ exports = module.exports = __webpack_require__(32)(false);
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: Lato; }\n\n.container {\n  padding: 80px; }\n\n.btn {\n  padding: 10px 40px;\n  border: none;\n  color: #fff;\n  font-weight: 600;\n  margin: 8px;\n  font-size: 18px;\n  cursor: pointer;\n  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);\n  outline: none; }\n  .btn:active {\n    box-shadow: none; }\n\n.btn-success {\n  background: #2ecc71; }\n\n.btn-error {\n  background: #e74c3c; }\n\n.row {\n  padding: 10px;\n  background: #bdc3c7;\n  margin: 20px 0;\n  border-radius: 2px; }\n\n.icon:after {\n  content: \"\\2713\";\n  color: #fff; }\n\n.icon.err:after {\n  content: \"\\2716\";\n  color: #fff; }\n\n.description {\n  font-size: 18px;\n  margin: 25px 0; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: Lato; }\n\n.container {\n  padding: 80px; }\n\n.btn {\n  padding: 10px 40px;\n  border: none;\n  color: #fff;\n  font-weight: 600;\n  margin: 8px;\n  font-size: 18px;\n  cursor: pointer;\n  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);\n  outline: none; }\n  .btn:active {\n    box-shadow: none; }\n\n.btn-success {\n  background: #2ecc71; }\n\n.btn-error {\n  background: #e74c3c; }\n\n.row {\n  padding: 10px;\n  background: #bdc3c7;\n  margin: 20px 0;\n  border-radius: 2px; }\n\n.icon:after {\n  content: \"\\2713\";\n  color: #fff; }\n\n.icon.err:after {\n  content: \"\\2716\";\n  color: #fff; }\n\n.description {\n  font-size: 18px;\n  margin: 25px 0; }\n\n.device-info {\n  padding: 25px;\n  margin: 10px 0;\n  background: rgba(255, 255, 255, 0.3);\n  color: #2c3e50; }\n\n.mobile {\n  font-size: 38px; }\n  .mobile .btn {\n    display: block;\n    margin: 25px;\n    font-size: 38px; }\n", ""]);
 
 // exports
 

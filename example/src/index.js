@@ -13,7 +13,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 render(
   <MessageManagerProvider desktopView={desktopView}>
-    <App />
+    <App isDesktop={desktopView} />
   </MessageManagerProvider>,
   elem
 );

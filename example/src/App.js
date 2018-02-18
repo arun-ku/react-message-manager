@@ -51,14 +51,19 @@ class App extends Component {
   };
 
   render() {
+    const { isDesktop } = this.props;
     return (
-      <div className="container">
+      <div className={`container ${ isDesktop ? '': 'mobile' }`}>
         <h1>Message Manager</h1>
         <p className="description">
           Message Manager is a toastr like component for react. It is easy to
           use and there is no need to add external css files into your code as
           it uses inline styles.
         </p>
+        <div className="device-info">
+          Open in { isDesktop ? 'mobile device or simulator ' : 'desktop device ' }
+          to see the { isDesktop ? 'mobile' : 'desktop' } view
+        </div>
         <div className="">
           <div className="row">
             <h4>Success</h4>
