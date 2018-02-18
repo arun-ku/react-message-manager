@@ -1,6 +1,6 @@
 {
   "name": "react-message-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A toaster component for react",
   "main": "dist/bundle.js",
   "author": "Arun Kumar",
@@ -12,6 +12,10 @@
     "dev": "webpack-dev-server --config=./example/webpack.config.babel.js --content-base=example",
     "test": "jest",
     "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arun-ku/react-message-manager"
   },
   "homepage": "https://github.com/arun-ku/react-message-manager",
   "jest": {
