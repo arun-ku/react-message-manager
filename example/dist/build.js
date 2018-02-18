@@ -1148,9 +1148,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }o.children = u;
       }if (e && e.defaultProps) for (n in s = e.defaultProps) {
         void 0 === o[n] && (o[n] = s[n]);
-      }return { $$typeof: k, type: e, key: i, ref: a, props: o, _owner: E.current };
+      }return { $$typeof: O, type: e, key: i, ref: a, props: o, _owner: E.current };
     }function c(e) {
-      return "object" == (typeof e === "undefined" ? "undefined" : _typeof(e)) && null !== e && e.$$typeof === k;
+      return "object" == (typeof e === "undefined" ? "undefined" : _typeof(e)) && null !== e && e.$$typeof === O;
     }function l(e) {
       var t = { "=": "=0", ":": "=2" };return "$" + ("" + e).replace(/[=:]/g, function (e) {
         return t[e];
@@ -1164,7 +1164,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }function d(e, t, r, o) {
       var i = typeof e === "undefined" ? "undefined" : _typeof(e);"undefined" !== i && "boolean" !== i || (e = null);var a = !1;if (null === e) a = !0;else switch (i) {case "string":case "number":
           a = !0;break;case "object":
-          switch (e.$$typeof) {case k:case O:case _:case S:
+          switch (e.$$typeof) {case O:case _:case k:case S:
               a = !0;}}if (a) return r(o, e, "" === t ? "." + y(e, 0) : t), 1;if (a = 0, t = "" === t ? "." : t + ":", Array.isArray(e)) for (var s = 0; s < e.length; s++) {
         i = e[s];var u = t + y(i, s);a += d(i, u, r, o);
       } else if (null === e || void 0 === e ? u = null : (u = T && e[T] || e["@@iterator"], u = "function" == typeof u ? u : null), "function" == typeof u) for (e = u.call(e), s = 0; !(i = e.next()).done;) {
@@ -1176,7 +1176,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       e.func.call(e.context, t, e.count++);
     }function h(e, t, r) {
       var n = e.result,
-          o = e.keyPrefix;e = e.func.call(e.context, t, e.count++), Array.isArray(e) ? g(e, n, r, x.thatReturnsArgument) : null != e && (c(e) && (t = o + (!e.key || t && t.key === e.key ? "" : ("" + e.key).replace(A, "$&/") + "/") + r, e = { $$typeof: k, type: e.type, key: t, ref: e.ref, props: e.props, _owner: e._owner }), n.push(e));
+          o = e.keyPrefix;e = e.func.call(e.context, t, e.count++), Array.isArray(e) ? g(e, n, r, x.thatReturnsArgument) : null != e && (c(e) && (t = o + (!e.key || t && t.key === e.key ? "" : ("" + e.key).replace(A, "$&/") + "/") + r, e = { $$typeof: O, type: e.type, key: t, ref: e.ref, props: e.props, _owner: e._owner }), n.push(e));
     }function g(e, t, r, n, o) {
       var i = "";null != r && (i = ("" + r).replace(A, "$&/") + "/"), t = f(t, i, n, o), null == e || d(e, "", h, t), p(t);
     } /** @license React v16.2.0
@@ -1191,9 +1191,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         v = r(8),
         x = r(1),
         w = "function" == typeof Symbol && Symbol.for,
-        k = w ? Symbol.for("react.element") : 60103,
-        O = w ? Symbol.for("react.call") : 60104,
-        _ = w ? Symbol.for("react.return") : 60105,
+        O = w ? Symbol.for("react.element") : 60103,
+        _ = w ? Symbol.for("react.call") : 60104,
+        k = w ? Symbol.for("react.return") : 60105,
         S = w ? Symbol.for("react.portal") : 60106,
         j = w ? Symbol.for("react.fragment") : 60107,
         T = "function" == typeof Symbol && Symbol.iterator,
@@ -1232,7 +1232,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           s = Array(u);for (var c = 0; c < u; c++) {
             s[c] = arguments[c + 2];
           }n.children = s;
-        }return { $$typeof: k, type: e.type, key: o, ref: i, props: n, _owner: a };
+        }return { $$typeof: O, type: e.type, key: o, ref: i, props: n, _owner: a };
       }, createFactory: function createFactory(e) {
         var t = u.bind(null, e);return t.type = e, t;
       }, isValidElement: c, version: "16.2.0", __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { ReactCurrentOwner: E, assign: b } },
@@ -1325,8 +1325,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       }return e;
     },
         o = r(3),
-        i = { messageContainer: { position: "fixed", fontFamily: "lato", bottom: 0, color: "#fff", zIndex: 99999999, backgroundColor: "transparent !important", width: "100%", pointerEvents: "none", display: "inline-block" }, textBase: n({ background: "#353535", display: "inline-block", verticalAlign: "bottom", borderRadius: 3, maxWidth: "15%", marginBottom: 15, float: "left", transition: "all 200ms ease-in-out", position: "relative", bottom: 10, overflow: "hidden", paddingRight: 30, boxShadow: "2px 2px 8px rgba(0,0,0,.5)", pointerEvents: "all", fontWeight: 600, padding: "15px 30px 15px 15px", marginLeft: 10 }, o.transitionStylesDesktop.initial), textBaseInvisible: n({ background: "#353535", display: "inline-block", borderRadius: 3, maxWidth: "20%", marginBottom: 15, float: "left", transition: "all 500ms ease-in-out", position: "relative", bottom: -1e3, overflow: "hidden", paddingRight: 30, boxShadow: "2px 2px 8px rgba(0,0,0,.5)", visibility: "hidden", fontWeight: 600, padding: "15px 30px 15px 15px", marginLeft: 10 }, o.transitionStylesDesktop.initial), errorBase: { background: "#c0392b" }, textContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", position: "relative" }, text: { display: "flex", flexDirection: "row" }, icon: { marginRight: 5, fontStyle: "normal" }, message: { wordBreak: "break-word" }, crossIcon: { fontStyle: "normal", position: "absolute", right: -20, top: 0, cursor: "pointer", color: "#ecf0f1" } },
-        a = n({}, i, { textBase: n({}, i.textBase, { maxWidth: "auto", display: "block", width: "100%", fontSize: 38, boxSizing: "border-box", padding: 30, bottom: 10, fontWeight: 800, height: "auto", position: "static", marginBottom: 5 }, o.transitionStylesMobile.initial), textContainer: { position: "relative" }, text: {}, icon: { width: "5%", display: "inline-block", verticalAlign: "top" }, message: { maxWidth: "92%", display: "inline-block", wordBreak: "break-word" }, crossIcon: { fontStyle: "normal", position: "absolute", right: -12, top: 0, cursor: "pointer", color: "#ecf0f1" } });t.default = function (e) {
+        i = { messageContainer: { position: "fixed", fontFamily: "lato", bottom: 0, color: "#fff", zIndex: 99999999, backgroundColor: "transparent !important", width: "100%", pointerEvents: "none" }, textBase: n({ background: "#353535", display: "inline-block", borderRadius: 3, maxWidth: "15%", marginBottom: 15, transition: "all 200ms ease-in-out", position: "relative", bottom: 10, overflow: "hidden", paddingRight: 30, boxShadow: "2px 2px 8px rgba(0,0,0,.5)", pointerEvents: "all", fontWeight: 600, padding: "15px 30px 15px 15px", marginLeft: 10, verticalAlign: "bottom" }, o.transitionStylesDesktop.initial), textBaseInvisible: n({ background: "#353535", display: "inline-block", borderRadius: 3, maxWidth: "20%", marginBottom: 15, float: "left", transition: "all 500ms ease-in-out", position: "relative", bottom: -1e3, overflow: "hidden", paddingRight: 30, boxShadow: "2px 2px 8px rgba(0,0,0,.5)", visibility: "hidden", fontWeight: 600, padding: "15px 30px 15px 15px", marginLeft: 10 }, o.transitionStylesDesktop.initial), errorBase: { background: "#c0392b" }, textContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", position: "relative" }, text: { display: "flex", flexDirection: "row" }, icon: { marginRight: 5, fontStyle: "normal" }, message: { wordBreak: "break-word" }, crossIcon: { fontStyle: "normal", position: "absolute", right: -20, top: 0, cursor: "pointer", color: "#ecf0f1" } },
+        a = n({}, i, { textBase: n({}, i.textBase, { maxWidth: "auto", display: "block", width: "100%", fontSize: 38, boxSizing: "border-box", padding: 30, bottom: 10, fontWeight: 800, height: "auto", position: "static", marginBottom: 0, marginTop: 5 }, o.transitionStylesMobile.initial), textContainer: { position: "relative" }, text: {}, icon: { width: "5%", display: "inline-block", verticalAlign: "top" }, message: { maxWidth: "92%", display: "inline-block", wordBreak: "break-word" }, crossIcon: { fontStyle: "normal", position: "absolute", right: -12, top: 0, cursor: "pointer", color: "#ecf0f1" } });t.default = function (e) {
       return e ? i : a;
     };
   }, function (e, t, r) {
@@ -1393,10 +1393,15 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var elem = document.getElementById('app');
+var desktopView = true;
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  desktopView = false;
+}
 
 (0, _reactDom.render)(_react2.default.createElement(
   _messageManager.MessageManagerProvider,
-  { desktopView: true },
+  { desktopView: desktopView },
   _react2.default.createElement(_App2.default, null)
 ), elem);
 
@@ -18791,7 +18796,7 @@ var App = (0, _messageManager.injectMessageManager)(_class = function (_Componen
           };
         case 'withIcon':
           return {
-            displayTime: 400000,
+            displayTime: 4000,
             iconClass: 'icon'
           };
       }
@@ -18800,7 +18805,7 @@ var App = (0, _messageManager.injectMessageManager)(_class = function (_Componen
 
       if (type === 'long') {
         messageManager.showSuccessMessage('This is a long Success Message to show the behaviour in such cases', {
-          displayTime: 800000
+          displayTime: 8000
         });
         return;
       }
@@ -18811,7 +18816,7 @@ var App = (0, _messageManager.injectMessageManager)(_class = function (_Componen
 
       if (type === 'long') {
         messageManager.showErrorMessage('This is a long Error Message to show the behaviour in such cases', {
-          displayTime: 800000
+          displayTime: 8000
         });
         return;
       }
@@ -19524,7 +19529,7 @@ module.exports = function (css) {
 			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
 
 		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
 		  return fullMatch;
 		}
 
