@@ -1,5 +1,5 @@
 {
-  "name": "message-manager",
+  "name": "react-message-manager",
   "version": "1.0.0",
   "description": "A toaster component for react",
   "main": "dist/bundle.js",
@@ -13,6 +13,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
+  "homepage": "https://github.com/arun-ku/react-message-manager",
   "jest": {
     "testPathIgnorePatterns": [
       "/node_modules/"
