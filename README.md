@@ -69,3 +69,28 @@ class App extends Component {
 
 export default injectMessageManager(App); //injectMessageManager HOC puts messageManager in the props
 ```
+
+###Props for MessageManagerProvider
+
+Prop | Type | Description | Default Value | Example
+-----|------|-------------|---------------|---------
+desktopView | bool | Is the component being rendered in desktop view | false | `<MessageManagerProvider isDesktop ></MessageManagerProvider>`
+configs | object | Default configuration for message manager | null | configs={ successBackgroundColor: 'green', successTextColor: 'red', errorBackgroundColor: 'red', errorTextColor: 'grey', defaultSuccessIconClass: 'icon', defaultErrorIconClass: 'icon', }
+
+
+###Methods
+
+* `showSuccessMessage` - Used to desplay a success message. The method takes two
+arguments: the first argument is the message to be displayed of type string. The seacond argument
+is the options object whick can have the following properties. `displayTime` - Time in milliseconds
+for which the message is to be displayed(defaults to 2000). `iconClass` - class of the icon to be
+displayed in the message (eg: 'fa fa-cross').
+
+* `showErrorMessage` - Same as `showSuccessMessage`, used to display an error message.
+
+> NOTE: Both `showSuccessMessage` and `showErrorMessage` return id of the message which is
+> required if you want to manually close that message.
+
+* `hideMessage` - Used to hide a specific message. The function takes one argument which is
+the id of the message which has to be removed from the screen.
+
