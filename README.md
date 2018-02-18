@@ -75,7 +75,7 @@ export default injectMessageManager(App); //injectMessageManager HOC puts messag
 Prop | Type | Description | Default Value | Example
 -----|------|-------------|---------------|---------
 desktopView | bool | Is the component being rendered in desktop view | false | `<MessageManagerProvider isDesktop ></MessageManagerProvider>`
-configs | object | Default configuration for message manager | null | configs={ successBackgroundColor: 'green', successTextColor: 'red', errorBackgroundColor: 'red', errorTextColor: 'grey', defaultSuccessIconClass: 'icon', defaultErrorIconClass: 'icon', }
+configs | object | Default configuration for message manager | null | configs={ successBackgroundColor: 'green', successTextColor: 'red', errorBackgroundColor: 'red', errorTextColor: 'grey', defaultSuccessIconClass: 'fa fa-tick', defaultErrorIconClass: 'fa fa-cross', }
 
 
 ###Methods
