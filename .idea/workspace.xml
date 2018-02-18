@@ -114,8 +114,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="18">
+              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -407,7 +407,7 @@
       <workItem from="1518842890084" duration="9000" />
       <workItem from="1518850097300" duration="2499000" />
       <workItem from="1518856551910" duration="4724000" />
-      <workItem from="1518974720280" duration="4766000" />
+      <workItem from="1518974720280" duration="4899000" />
     </task>
     <task id="LOCAL-00001" summary="added default display time">
       <created>1518439435259</created>
@@ -441,7 +441,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51713000" />
+    <option name="totallyTimeSpent" value="51846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1305" height="780" extended-state="6" />
@@ -871,8 +871,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="18">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="34" />
           <folding />
         </state>
       </provider>
